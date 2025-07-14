@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script src="script.js"></script>
+    <h1>Expense Tracker</h1>
+    <div id="dat">
+        <input id = 'dateInput' type = 'date'>
+        <select id="type">
+  <option disabled selected value="">Please Select an Option</option>
+  <option value="food">🍔 Food</option>
+  <option value="transport">🚌 Transport</option>
+  <option value="shopping">🛍️ Shopping</option>
+  <option value="utilities">💡 Utilities</option>
+  <option value="rent">🏠 Rent</option>
+  <option value="entertainment">🎬 Entertainment</option>
+  <option value="health">💊 Health</option>
+  <option value="education">📚 Education</option>
+  <option value="subscriptions">📺 Subscriptions</option>
+  <option value="travel">✈️ Travel</option>
+  <option value="gifts">🎁 Gifts</option>
+  <option value="savings">💰 Savings</option>
+  <option value="others">🔖 Others</option>
+</select>
+<input type='number' placeholder ='Amount' id = 'amtIp'>  
+<input type = 'text' placeholder = 'Description' id = 'desc'>
+<button id="btn" class="button-style">Add Expense</button>
+<button id="calcTotal" class="button-style">Calculate Total</button>
+
+</div>
+
+<div id ='table'>
+    <table id="tab">
+        <tr>
+            <th>Date</th>
+            <th>Type</th>
+            <th>Expense</th>
+            <th>Description</th>
+            <th>Action</th>
+        </tr>
+    </table>
+</div>
+<div id="total" style="text-align: center; font-size: 20px; margin: 20px; font-weight: bold; color: #fff9c4; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">
+    Total Expense : ₹0.00
+</div>
+<div style="text-align: center;">
+  <button id="resetTable" class="button-style">Reset Table</button>
+</div>
+
+
+
+</body>
+</html>
